@@ -162,13 +162,13 @@ module.exports = function(grunt) {
       site: {
         options: {production: false,layout: 'default.hbs'},
         files: [
-          { expand: true, cwd: '<%= globalConfig.source  %>/template/pages', src: ['**/*.hbs'], dest: '<%= site.destination %>' }
+          { expand: true, cwd: '<%= globalConfig.source  %>/template/pages', src: ['**/*.hbs'], dest: '<%= globalConfig.dist %>' }
         ]
       },
       production: {
         options: {production: true,layout: 'default.hbs'},
         files: [
-          { expand: true, cwd: '<%= globalConfig.source  %>/template/pages', src: ['**/*.hbs'], dest: '<%= site.destination %>' }
+          { expand: true, cwd: '<%= globalConfig.source  %>/template/pages', src: ['**/*.hbs'], dest: '<%= globalConfig.dist %>' }
         ]
       }
     }
