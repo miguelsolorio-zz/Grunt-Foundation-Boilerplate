@@ -1,8 +1,8 @@
 {
-  "name": "microzine-bridge",
+  "name": "grunt-foundation-boilerplate",
   "version": "1",
   "authors": [
-    "Miguel Solorio <miguel.solorio@zumobi.com>"
+    "Miguel Solorio <me@miguelsolorio.com>"
   ],
   "license": "MIT",
   "private": true,
