@@ -37,3 +37,6 @@ RequireJS handles all dependencies and are defined at <code>src > js > config.js
 
 ### Grunt Build
 When you're ready to build for production simply run: <code>grunt build</code> and your files will be minified under the <code>_public</code> directory.
+
+## Demo
+- (http://miguelsolorio.github.io/grunt-foundation-boilerplate/)[http://miguelsolorio.github.io/grunt-foundation-boilerplate/]
