@@ -109,13 +109,13 @@ module.exports = function(grunt) {
 
       html: {
         files: ['<%= globalConfig.source  %>/**/*.hbs'],
-        tasks: ['assemble:site'],
+        tasks: ['newer:assemble:site'],
         livereload: true
       },
 
       css: {
         files: ['<%= globalConfig.source  %>/css/*.scss'],
-        tasks: ['sass'],
+        tasks: ['newer:sass'],
         options:{
           spawn: false
         }
@@ -123,13 +123,13 @@ module.exports = function(grunt) {
 
       js: {
         files: ['<%= globalConfig.source  %>/js/*.js'],
-        tasks: ['requirejs'],
+        tasks: ['newer:requirejs'],
         livereload: true
       },
 
       images: {
         files: ['<%= globalConfig.source  %>/images/**/*.{png,jpg,gif}'],
-        tasks: ['imagemin'],
+        tasks: ['newer:imagemin'],
         livereload: true
       }
 
@@ -186,11 +186,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('assemble' );
   grunt.loadNpmTasks('grunt-newer' );
+  grunt.loadNpmTasks('assemble' );
 
   // Default
-  grunt.registerTask('default', ['clean', 'sass:dev', 'modernizr', 'requirejs', 'imagemin', 'assemble:site', 'connect', 'watch']);
+  grunt.registerTask('default', ['newer:clean', 'newer:sass:dev', 'modernizr', 'newer:requirejs', 'newer:imagemin', 'newer:assemble:site', 'connect', 'watch']);
 
   // Build Task
   grunt.registerTask('build', ['clean', 'sass:dist', 'modernizr', 'requirejs', 'uglify', 'imagemin', 'assemble:production', 'newer:assemble']);
