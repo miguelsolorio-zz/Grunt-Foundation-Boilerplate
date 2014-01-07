@@ -1,0 +1,20 @@
+{
+  "name": "microzine-bridge",
+  "version": "1",
+  "authors": [
+    "Miguel Solorio <miguel.solorio@zumobi.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3"
+  },
+  "devDependencies": {
+    "foundation": "git@github.com:zurb/bower-foundation.git#~5.0.2"
+  }
+}
