@@ -1,10 +1,26 @@
 # Grunt Foundation Boilerplate
-Welcome to my responsive boilerplate! I've created this template for myself to help jump-start my web development process. This boilerplate runs on [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) while utilizing the following libraries:
+Welcome to my responsive boilerplate! I've created this template for myself to help jump-start my web development process. This boilerplate runs on [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/), which depend on [Node](http://nodejs.org/) and [npm](http://npmjs.org/). Ensure that you have Node and npm installed before you begin. Additionally, this project utilizes the following libraries:
 - [Assemble](http://assemble.io/)
 - [Foundation](foundation.zurb.com/)
 - [RequireJS](http://requirejs.org/)
 - [Modernizr](http://modernizr.com/)
 - [jQuery](http://jquery.com/)
+
+## Dependencies
+
+### Installing Grunt
+1. Change to the project's root directory.
+2. Install the CLI by running: <code>npm install -g grunt-cli</code>
+3. Install project dependencies with: <code>npm install</code>.
+4. Run Grunt with: <code>grunt</code>.
+5. For more details, visit [Grunt's website](http://gruntjs.com/getting-started).
+
+
+### Installing Bower
+1. Install Bower globally using npm: <code>npm install -g bower</code>
+2. Install project dependencies with: <code>bower install</code>.
+3. For more details, visit [Bower's website](http://bower.io/).
+
 
 ## File Structure
 
